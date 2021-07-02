@@ -23,6 +23,11 @@
 
 
 local g = grid.connect()
+local a = arc.connect()
+
+function a.delta(n, d)
+  print('beep')
+end
 
 local fileselect = require 'fileselect'
 local textentry = require 'textentry'
